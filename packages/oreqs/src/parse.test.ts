@@ -10,5 +10,9 @@ describe("qs", () => {
       const actual = parse("q=qs&g=3");
       expect(actual).toEqual({ q: "qs", g: "3" });
     });
+    test("array", () => {
+      const actual = parse("aaa[]=1&aaa[]=2");
+      expect(actual).toEqual({ aaa: ["1", "2"] });
+    });
   });
 });
