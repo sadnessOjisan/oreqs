@@ -1,0 +1,9 @@
+{
+  "name": "qs-sandbox",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "qs": "^6.10.1"
+  }
+}

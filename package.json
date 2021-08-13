@@ -1,22 +1,21 @@
 {
   "name": "oreqs",
+  "private": true,
   "version": "1.0.0",
-  "description": "ore no qs",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sadnessOjisan/oreqs.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sadnessOjisan/oreqs/issues"
-  },
-  "homepage": "https://github.com/sadnessOjisan/oreqs#readme",
-  "dependencies": {
+  "repository": "https://github.com/sadnessOjisan/oreqs.git",
+  "author": "sadness_ojisan <sadness.ojisan@gmail.com>",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "jest": "^27.0.6",
+    "ts-jest": "^27.0.4",
     "typescript": "^4.3.5"
+  },
+  "scripts": {
+    "test": "jest"
   }
 }
