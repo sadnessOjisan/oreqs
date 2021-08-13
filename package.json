@@ -1,0 +1,22 @@
+{
+  "name": "oreqs",
+  "version": "1.0.0",
+  "description": "ore no qs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sadnessOjisan/oreqs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sadnessOjisan/oreqs/issues"
+  },
+  "homepage": "https://github.com/sadnessOjisan/oreqs#readme",
+  "dependencies": {
+    "typescript": "^4.3.5"
+  }
+}
