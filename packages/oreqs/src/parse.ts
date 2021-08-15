@@ -1,5 +1,6 @@
 const DEFAULT_DELIMITER = "&";
 
+// TODO: URLSearchParams を使ったものに切り替える
 export const parse = (input: string) => {
   const parts = input.split(DEFAULT_DELIMITER);
   const result = {};
@@ -9,7 +10,8 @@ export const parse = (input: string) => {
       const pos = part.indexOf("=");
       const key = part.slice(0, pos);
       const value = part.slice(pos + 1);
-      result[key] = value;
+      const decodedValue = decodeURIComponent(value);
+      result[key] = decodedValue;
     } else {
       const pos = part.indexOf("[]=");
       const key = part.slice(0, pos);
